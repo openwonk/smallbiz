@@ -1,4 +1,4 @@
-package worldbank
+package smallbiz
 
 import (
 	"io/ioutil"
