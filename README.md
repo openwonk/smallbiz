@@ -8,12 +8,12 @@ Library provides access to the [US SBA API](http://data.worldbank.org/developers
 package main
 
 import (
-	biz "github.com/openwonk/smallbiz"
+	sba "github.com/openwonk/smallbiz"
 )
 
 func main() {
 	// Series{city, county, state, format}
-	s := biz.Series{"Seattle", "King", "WA", "json"}
+	s := sba.Series{"Seattle", "King", "WA", "json"}
 
 	s.OneCity().Write("seattle.json")
 	s.OneCounty().Write("king.json")
